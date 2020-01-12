@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chinook", "Chinook\Chinook.csproj", "{B01F7C07-FA53-47D8-B207-2FC2F0E9C0F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B01F7C07-FA53-47D8-B207-2FC2F0E9C0F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B01F7C07-FA53-47D8-B207-2FC2F0E9C0F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B01F7C07-FA53-47D8-B207-2FC2F0E9C0F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B01F7C07-FA53-47D8-B207-2FC2F0E9C0F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4548E4FB-8DA0-437A-8058-E87650FC0258}
+	EndGlobalSection
+EndGlobal
