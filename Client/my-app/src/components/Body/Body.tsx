@@ -15,8 +15,8 @@ export interface Album {
 }
 
 export interface columnDefs {
-  headerName: string;
-  field: string;
+  Header: string;
+  accessor: string;
   sortable?: boolean;
   filter?: boolean;
 }
@@ -39,13 +39,11 @@ const Body: React.FC = () => {
     loaded: false,
     albums: [],
     defs: [
-      { headerName: "ID", field: "id" },
-      { headerName: "Album Name", field: "name", filter: true },
+      { Header: "ID", accessor: "id" },
+      { Header: "Album Name", accessor: "name"},
       {
-        headerName: "Number of Tracks",
-        field: "no",
-        sortable: true,
-        filter: true
+        Header: "Number of Tracks",
+        accessor: "no"
       }
     ]
   });
