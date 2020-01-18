@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Chinook.Models;
 using Chinook.Services;
+using Chinook.Services.Servicing;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,7 +33,8 @@ namespace Chinook
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddDbContext<ChinookContext>(opt =>
                 opt.UseSqlServer("Server=DESKTOP-7J0KEH9\\SQLEXPRESS;Database=Chinook;Trusted_Connection=True;"));
-            services.AddScoped<ISupervisor, AlbRepo>();
+            services.AddScoped<IAlbumService, AlbumService>();
+            services.AddScoped<ICommandFactory, CommandFactory>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
