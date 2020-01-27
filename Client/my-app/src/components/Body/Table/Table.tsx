@@ -1,16 +1,7 @@
 import React from "react";
-import { AgGridReact } from "ag-grid-react";
-import "ag-grid-community/dist/styles/ag-grid.css";
-import "ag-grid-community/dist/styles/ag-theme-balham.css";
-import "ag-grid-community/dist/styles/ag-theme-balham-dark.css";
 import { Response } from "../Body";
 import "../Style.css";
 import { useTable, useSortBy } from "react-table";
-
-// Make it so that the columns have a custom fit that suits required
-const ready = (params: any) => {
-  params.api.sizeColumnsToFit();
-};
 
 // Function that makes use of AG Grid to display data
 const Table = ({ defs, albums }: Response) => {
@@ -33,11 +24,7 @@ const Table = ({ defs, albums }: Response) => {
                 <th {...column.getHeaderProps(column.getSortByToggleProps())}>
                   {column.render("Header")}
                   <span>
-                    {column.isSorted
-                      ? column.isSortedDesc
-                        ? " *"
-                        : " +"
-                      : ""}
+                    {column.isSorted ? (column.isSortedDesc ? " *" : " +") : ""}
                   </span>
                 </th>
               ))}

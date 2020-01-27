@@ -1,7 +1,16 @@
 .centered {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -50px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+
+.ragged {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  flex-direction: column;
+  margin: 20px;
+  margin-left: 50px;
 }
